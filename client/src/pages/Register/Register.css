@@ -1,0 +1,55 @@
+
+
+.authentification{
+    background-image: url('../../assets/img/background-foot.jpg');
+    background-repeat: repeat;
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.authentification-form{
+    width: 45%;
+    gap: 2pc;
+}
+input{
+    border-radius: 6px;
+    border: 1px solid gray !important;
+}
+label{
+    font-size: 16px;
+    font-weight: 600;
+}
+.primary-button{
+    width: 100% !important;
+    height: 44px;
+    font-weight: 700;
+    color: #000514;
+    font-size: 16px;
+    background-color: #A6FC36 !important;
+}
+.link{
+    color: #000;
+    font-size: 16px;
+    font-weight: 800;
+}
+.card-title{
+    background-color: orangered;
+    margin-left: -7%;
+    width: fit-content;
+    border-radius: 7px;
+    padding: 10px;
+    box-shadow: 1px 1px 9px 2px;
+    max-width: max-content;
+    font-weight: bold;
+}
+@media only screen and (max-width:80rem){
+    .authentification-form{
+        width: 80%;
+    }
+    .card-title{
+        margin-left: -16%;
+    }
+}
