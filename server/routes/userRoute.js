@@ -42,7 +42,7 @@ router.post('/login',async (req,res)=>{
         }
     }catch(error){
         console.log(error);
-        res.status(500).send({message:"erreur de connexion",success:false,data:token})
+        res.status(500).send({message:"erreur de connexion",success:false,error})
     }
 
 }
