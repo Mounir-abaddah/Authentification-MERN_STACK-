@@ -3,3 +3,22 @@
 *{
   font-family: 'Cera Round Pro DEMO', sans-serif !important;
 }
+
+.spinner-parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  opacity: 0.8;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+}
+.spinner-border{
+  width: 5rem;
+  height: 5rem;
+  color: white !important;
+}

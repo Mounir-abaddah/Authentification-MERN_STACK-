@@ -4,12 +4,17 @@ import { Button,Form, Input } from 'antd';
 import axios from 'axios'
 import toast from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
+import {useDispatch} from 'react-redux'
+import {showLoading,hideLoading} from '../../redux/alertsSlice'
 
 const Login = () => {
+  const dispatch = useDispatch();
   const navigate = useNavigate()
   const onFinish = async(values)=>{
     try{
+      dispatch(showLoading());
       const response = await axios.post('/api/user/login',values);
+      dispatch(hideLoading());    
       if(response.data.success){
         toast.success(response.data.message)
         toast("Redirection vers la page d'accueil")
